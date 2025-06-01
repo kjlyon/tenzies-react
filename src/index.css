@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: Karla, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #0B2434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+main {
+  width: calc(100vw - 60px);  /* Full width minus 30px padding on each side */
+  height: calc(100vh - 60px); /* Full height minus 30px padding on top/bottom */  
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  width: calc(100vw - 120px);  /* Full width minus 60px padding on each side */
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+}
+
+.die {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  font-size: 1.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Karla, sans-serif;
+
+}
+
+.reroll {
+  background-color: #5035FF;
+  color: white;
+  height: 50px;
+  white-space: nowrap;
+  width: auto;
+  padding: 6px 21px;
+  border-radius: 3.81px;
+  font-family: Karla, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
